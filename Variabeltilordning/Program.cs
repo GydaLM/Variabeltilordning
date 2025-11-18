@@ -39,3 +39,20 @@ static void testingReadAndReadKey()
     Console.WriteLine($"This is ReadKey() converted to the key pressed with built in method: {testingReadKey.Key}");
 
 }
+
+//Fra Rebecka exempel på bruk av ReadKey()
+usingReadKey();
+static void usingReadKey()
+{
+    Console.WriteLine("Press Enter to continue...");
+    ConsoleKeyInfo userInput = Console.ReadKey();
+
+    if (userInput.Key == ConsoleKey.Enter)
+    {
+        Console.WriteLine("You pressed Enter!");
+    }
+    else
+    {
+        Console.WriteLine("You pressed a different key.");
+    }
+}
