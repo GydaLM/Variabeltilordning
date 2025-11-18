@@ -1,9 +1,16 @@
 ﻿
-Console.WriteLine($"This is the sum of the two numbers: {AddTwoNumbers()}");
 
-static int AddTwoNumbers()
+int someNumber = 4;
+int anotherNumber = 3;
+static int AddTwoNumbers(int number1, int number2)
 {
-    int number1 = 2;
-    int number2 = 3;
     return number1 + number2;
+}
+
+Console.WriteLine($"This is the sum of two numbers: {AddTwoNumbers(someNumber, anotherNumber)}");
+
+DontReturn();
+static void DontReturn()
+{
+    Console.WriteLine("Denne metoden returnerer ingenting");
 }
