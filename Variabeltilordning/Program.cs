@@ -14,3 +14,28 @@ static void DontReturn()
 {
     Console.WriteLine("Denne metoden returnerer ingenting");
 }
+
+testingReadLine();
+static void testingReadLine()
+{
+    Console.WriteLine("Type in some text to test ReadLine()");
+    var testingReadLine = Console.ReadLine();
+    Console.WriteLine($"This is ReadLine(): {testingReadLine}");
+
+}
+
+testingReadAndReadKey();
+static void testingReadAndReadKey()
+{
+    Console.WriteLine("Press any key followed by enter");
+    int testingRead = Console.Read();
+    char character = (char)testingRead;
+    Console.WriteLine($"This is Read(): {testingRead}");
+    Console.WriteLine($"This is Read() converted with (char): {character}");
+
+    Console.WriteLine("Press any key...");
+    var testingReadKey = Console.ReadKey();
+    Console.WriteLine($"\nThis is ReadKey(): {testingReadKey}");
+    Console.WriteLine($"This is ReadKey() converted to the key pressed with built in method: {testingReadKey.Key}");
+
+}
